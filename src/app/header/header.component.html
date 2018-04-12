@@ -1,4 +1,6 @@
-<nav>
+<fa name="bars" (click)="toggleNav()" fixed="true"></fa>
+
+<nav [ngClass]="{'hide': hidenave}">
   <a routerLink="/" routerLinkActive="active">Home</a>
   <a routerLink="/services" routerLinkActive="active">Activities</a>
   <a routerLink="/events" routerLinkActive="active">Events</a>

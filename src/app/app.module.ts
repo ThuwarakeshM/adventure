@@ -20,6 +20,9 @@ import { PostsComponent } from './posts/posts.component';
 import { PostComponent } from './post/post.component';
 import { ServiceComponent } from './service/service.component';
 
+import { AngularFontAwesomeModule } from 'angular-font-awesome';
+import { Http404Component } from './http404/http404.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -34,12 +37,14 @@ import { ServiceComponent } from './service/service.component';
     AlbumComponent,
     PostsComponent,
     PostComponent,
-    ServiceComponent
+    ServiceComponent,
+    Http404Component
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    ServiceWorkerModule.register('/ngsw-worker.js', { enabled: environment.production })
+    ServiceWorkerModule.register('/ngsw-worker.js', { enabled: environment.production }),
+    AngularFontAwesomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -10,6 +10,7 @@ import { PostComponent } from './post/post.component';
 import { ServicesComponent } from './services/services.component';
 import { ServiceComponent } from './service/service.component';
 import { AboutComponent } from './about/about.component';
+import { Http404Component } from './http404/http404.component';
 
 const routes: Routes = [
   {path: '', component: HomeComponent},
@@ -22,6 +23,7 @@ const routes: Routes = [
   {path: 'services', component: ServicesComponent},
   {path: 'service', component: ServiceComponent},
   {path: 'about', component: AboutComponent},
+  {path: '**', component: Http404Component}
 ];
 
 @NgModule({

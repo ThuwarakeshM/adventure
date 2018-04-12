@@ -1,0 +1,53 @@
+nav {
+    margin-top: 1%;
+    display: flex;
+    // justify-content: space-around;
+    background-color: #33333370;  
+}
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 1% 0% 1% 0%;
+    border-radius: 5px;
+    min-width: 8%;
+    text-align: center;
+}
+
+.active {
+    color: blue;
+}
+
+nav a:hover {
+    color: #e85356;
+    font-weight: 1000;
+}
+
+
+
+fa {
+    display: none;
+}
+
+@media only screen and (max-width: 900px) {
+
+    fa {
+        display: block;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+    }
+
+    nav a {
+        margin: 1%;
+    }
+
+    fa {
+        color: white;
+    }
+
+    .hide {
+        display: none;
+    }
+}
