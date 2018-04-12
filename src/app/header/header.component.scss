@@ -36,10 +36,18 @@ fa {
     nav {
         display: flex;
         flex-direction: column;
+        background-color: transparent;
+        position: fixed;
+        right: 0%;
+        left: 0%;
+        width: 100%;
     }
 
     nav a {
-        margin: 1%;
+        margin: 2%;
+        border-radius: 5px;
+        background-color: #33333370;
+        text-align: center;
     }
 
     fa {

@@ -1,10 +1,10 @@
 <fa name="bars" (click)="toggleNav()" fixed="true"></fa>
 
-<nav [ngClass]="{'hide': hidenave}">
-  <a routerLink="/" routerLinkActive="active">Home</a>
-  <a routerLink="/services" routerLinkActive="active">Activities</a>
-  <a routerLink="/events" routerLinkActive="active">Events</a>
-  <a routerLink="/gallery" routerLinkActive="active">Galery</a>
-  <a routerLink="/posts" routerLinkActive="active">Blog</a>
-  <a routerLink="/about" routerLinkActive="active">About</a>
+<nav [ngClass]="{'hide': hidenave}" [@NavViz]="showNav()">
+  <a routerLink="/" routerLinkActive="active" [@linkViz]="showNav()">Home</a>
+  <a routerLink="/services" routerLinkActive="active" [@linkViz]="showNav()">Activities</a>
+  <a routerLink="/events" routerLinkActive="active" [@linkViz]="showNav()">Events</a>
+  <a routerLink="/gallery" routerLinkActive="active" [@linkViz]="showNav()">Gallery</a>
+  <a routerLink="/posts" routerLinkActive="active" [@linkViz]="showNav()">Blog</a>
+  <a routerLink="/about" routerLinkActive="active" [@linkViz]="showNav()">About</a>
 </nav>
