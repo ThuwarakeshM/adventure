@@ -3,14 +3,13 @@ nav {
     display: flex;
     // justify-content: space-around;
     background-color: #33333370;  
+    border-radius: 5px;
 }
 nav a {
     color: white;
     text-decoration: none;
     padding: 1%;
-    border-radius: 5px;
-    min-width: 8%;
-    text-align: center;
+    text-align: left;
 }
 
 .active {
