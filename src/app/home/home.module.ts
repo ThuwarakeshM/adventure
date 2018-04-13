@@ -3,12 +3,14 @@ import { CommonModule } from '@angular/common';
 
 import { HomeRoutingModule } from './home-routing.module';
 import { HomePageComponent } from './home-page/home-page.component';
+import { CarouselComponent } from './carousel/carousel.component';
+
 
 @NgModule({
   imports: [
     CommonModule,
-    HomeRoutingModule
+    HomeRoutingModule,
   ],
-  declarations: [HomePageComponent]
+  declarations: [HomePageComponent, CarouselComponent]
 })
 export class HomeModule { }

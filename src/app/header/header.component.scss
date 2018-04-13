@@ -4,6 +4,7 @@ nav {
     // justify-content: space-around;
     background-color: #33333370;  
     border-radius: 5px;
+    z-index: 1024;
 }
 nav a {
     color: white;
@@ -37,9 +38,9 @@ fa {
         display: flex;
         flex-direction: column;
         background-color: transparent;
-        position: fixed;
-        right: 0%;
-        left: 0%;
+        // position: fixed;
+        // right: 0%;
+        // left: 0%;
         width: 100%;
     }
 
